@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex레이아웃</title>
+    <style>
+      #flex-wrap1 {
+        display: flex;
+        background-color: #333;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+      }
+      #flex-wrap2 {
+        display: flex;
+        background-color: #333;
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+      }
+      #flex-wrap3 {
+        display: flex;
+        background-color: #333;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+      }
+      div > div {
+        border: 1px solid black;
+        width: 300px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>주축정렬(justify-content: space-between)</h2>
+    <div id="flex-wrap1">
+      <div>div1</div>
+      <div>div2</div>
+      <div>div3</div>
+    </div>
+    <h2>주축정렬(justify-content: space-evenly)</h2>
+    <div id="flex-wrap2">
+      <div>div1</div>
+      <div>div2</div>
+      <div>div3</div>
+    </div>
+    <h2>주축정렬(justify-content: space-around)</h2>
+    <div id="flex-wrap3">
+      <div>div1</div>
+      <div>div2</div>
+      <div>div3</div>
+    </div>
+  </body>
+</html>
